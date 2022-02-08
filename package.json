@@ -3,9 +3,24 @@
   "version": "0.1.0",
   "license": "MIT",
   "description": "Pattern library for all TACC/Core-Styles.",
+  "main": "index.js",
+  "config": {
+    "lib_conf": "--config ./patternlab-config.json"
+  },
   "scripts": {
+    "pl:build": "patternlab build $npm_config_lib_conf",
+    "pl:help": "patternlab --help",
+    "pl:install": "patternlab install $npm_config_lib_conf",
+    "pl:serve": "patternlab serve $npm_config_lib_conf",
+    "pl:version": "patternlab --version",
+    "start": "npm run pl:serve"
   },
   "dependencies": {
+    "@pattern-lab/cli": "^5.16.2",
+    "@pattern-lab/core": "^5.16.2",
+    "@pattern-lab/engine-handlebars": "^5.16.1",
+    "@pattern-lab/starterkit-handlebars-vanilla": "^1.4.3",
+    "@pattern-lab/uikit-workshop": "^5.16.2"
   },
   "devDependencies": {
     "@tacc/core-styles": "tacc-wbomar/Core-Styles"
