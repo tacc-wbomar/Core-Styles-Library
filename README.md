@@ -18,14 +18,30 @@ A pattern library for shared styles of TACC WMA Workspace Portals & Websites
 
 ### Quick Start
 
-1. Install dependencies: `npm`
-2. Build and run library: `npm run ____`¹
+```bash
+1. Install dependencies: `yarn`
+2. Build and run library: `yarn dev`¹²
+```
 
-<sub>¹ Ensure port `____` is available locally.</sub>
+<sub>¹ Ensure port `3000` is available locally.</sub>
+<sub>² Or `yarn staging` to demo library for deploy.</sub>
 
 ### Linting and Formatting Conventions
 
-No linting is emplemented, _yet_.
+Client-side code is linted (JavaScript via `eslint`, CSS via `stylelint`), and is enforced on commits to the repo. To see a list of linting issues, in the console:
+
+1. From the project root, run
+
+    `npm run lint`
+    
+    Or, to lint each language independently, run:
+
+    `npm run lint:js`\
+    `npm run lint:css`
+
+You may auto-fix your linting errors to conform with configured standards, for specific languages, via:
+- `npm run lint:js -- --fix`
+- `npm run lint:css -- --fix`
 
 
 ### Testing
