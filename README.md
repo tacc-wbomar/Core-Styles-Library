@@ -19,11 +19,9 @@ A pattern library for shared styles of TACC WMA Workspace Portals & Websites
 ### Quick Start
 
 1. Install dependencies: `yarn`
-2. Build and run library: `yarn dev`¹
-3. (Optional) Build and preview library: `yarn build && yarn staging`²
+2. Build and run library: `yarn storybook`¹
 
-<sub>¹ Ensure port `3000` is available locally.</sub>
-<sub>² Ensure port `5000` is available locally.</sub>
+<sub>¹ Ensure port `6006` is available locally.</sub>
 
 ### Linting and Formatting Conventions
 
