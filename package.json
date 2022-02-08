@@ -7,8 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "staging": "vite preview",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "// scripts": {
+    "storybook:fix": "https://github.com/storybookjs/storybook/issues/16555#issuecomment-975690756"
   },
   "dependencies": {
     "react": "^17.0.2",
