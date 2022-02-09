@@ -1,0 +1,16 @@
+import { Meta, Story } from '@storybook/addon-docs';
+
+import { Header } from './Header';
+
+export const LoggedIn = () => <Header user={{}} />
+export const LoggedOut = () => <Header />
+
+<Meta title="Example/Header" component={Header} />
+
+<Story name="LoggedIn">
+  <Header user={{}} />
+</Story>
+
+<Story name="LoggedOut">
+  <Header />
+</Story>
