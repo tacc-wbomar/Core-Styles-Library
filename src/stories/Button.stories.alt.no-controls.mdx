@@ -1,0 +1,21 @@
+import { Meta, Story } from '@storybook/addon-docs';
+
+import { Button } from './Button';
+
+<Meta title="Example/Button" component={Button} />
+
+<Story name="Primary">
+  <Button primary label="Button" />
+</Story>
+
+<Story name="Secondary">
+  <Button label="Button" />
+</Story>
+
+<Story name="Large">
+  <Button size="large" label="Button" />
+</Story>
+
+<Story name="Small">
+  <Button size="small" label="Button" />
+</Story>

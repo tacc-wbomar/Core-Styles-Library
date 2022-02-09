@@ -4,18 +4,20 @@ import { Button } from './Button';
 
 <Meta title="Example/Button" component={Button} />
 
-<Story name="Primary">
-  <Button primary label="Button" />
+export const Template = (args) => <Button {...args} />;
+
+<Story name="Primary" args={{ primary: true, label: 'Button' }}>
+  {Template.bind({})}
 </Story>
 
-<Story name="Secondary">
-  <Button label="Button" />
+<Story name="Secondary" args={{ label: 'Button' }}>
+  {Template.bind({})}
 </Story>
 
-<Story name="Large">
-  <Button size="large" label="Button" />
+<Story name="Large" args={{ size: 'large', label: 'Button' }}>
+  {Template.bind({})}
 </Story>
 
-<Story name="Small">
-  <Button size="small" label="Button" />
+<Story name="Small" args={{ size: 'small', label: 'Button' }}>
+  {Template.bind({})}
 </Story>
