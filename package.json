@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "staging": "vite preview",
-    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006 --no-dll",
-    "build-storybook": "build-storybook --no-dll"
+    "storybook": "export NODE_OPTIONS=--openssl-legacy-provider; start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "// scripts": {
     "storybook:fix": "https://github.com/storybookjs/storybook/issues/16555#issuecomment-975690756"
@@ -19,10 +19,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
-    "@storybook/addon-actions": "6.0.28",
-    "@storybook/addon-essentials": "6.0.28",
-    "@storybook/addon-links": "6.0.28",
-    "@storybook/react": "6.0.28",
+    "@storybook/addon-actions": "6.3.13",
+    "@storybook/addon-essentials": "6.3.13",
+    "@storybook/addon-links": "6.3.13",
+    "@storybook/react": "6.3.13",
     "@tacc/core-styles": "tacc-wbomar/Core-Styles",
     "@vitejs/plugin-react": "^1.0.7",
     "babel-loader": "^8.2.3",
