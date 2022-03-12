@@ -3,19 +3,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "description": "Pattern library for all TACC/Core-Styles.",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "staging": "vite preview"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
   "devDependencies": {
-    "@tacc/core-styles": "tacc-wbomar/Core-Styles",
-    "@vitejs/plugin-react": "^1.0.7",
-    "vite": "^2.7.2"
+    "@tacc/core-styles": "tacc-wbomar/Core-Styles"
   },
   "repository": "git@github.com:TACC/Core-Styles-Library-Storybook.git",
   "author": "TACC ACI WMA <wma-portals@gmail.com>"
