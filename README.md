@@ -19,9 +19,11 @@ A pattern library for shared styles of TACC WMA Workspace Portals & Websites
 ### Quick Start
 
 1. Install dependencies: `npm`
-2. Build and run library: `npm run dev`¹
+2. Build and run not... library: `npm run dev`¹
+3. Build and run library: `npm run storybook`²
 
 <sub>¹ Ensure port `3000` is available locally.</sub>
+<sub>² Ensure port `6006` is available locally.</sub>
 
 ### Linting and Formatting Conventions
 

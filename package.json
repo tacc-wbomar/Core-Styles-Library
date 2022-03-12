@@ -5,15 +5,27 @@
   "description": "Pattern library for all TACC/Core-Styles.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "engines": {
+    "node": ">=16.x",
+    "npm": ">=8.x"
   },
   "dependencies": {
     "lit": "^2.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/web-components": "^6.4.19",
     "@tacc/core-styles": "tacc-wbomar/Core-Styles",
-    "vite": "^2.8.0",
-    "typescript": "^4.5.4"
+    "babel-loader": "^8.2.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
   },
   "repository": "git@github.com:TACC/Core-Styles-Library-Storybook.git",
   "author": "TACC ACI WMA <wma-portals@gmail.com>"
