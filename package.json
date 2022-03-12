@@ -5,13 +5,21 @@
   "description": "Pattern library for all TACC/Core-Styles.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "lit": "^2.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/web-components": "^6.4.19",
     "@tacc/core-styles": "tacc-wbomar/Core-Styles",
+    "babel-loader": "^8.2.3",
     "vite": "^2.8.0"
   },
   "repository": "git@github.com:TACC/Core-Styles-Library-Storybook.git",
