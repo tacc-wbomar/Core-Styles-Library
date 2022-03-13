@@ -4,12 +4,10 @@ export default {
   title: 'Example/Header',
 };
 
-const Template = (args) => Header(args);
-
-export const LoggedIn = Template.bind({});
+export const LoggedIn = Header.bind({});
 LoggedIn.args = {
-  user: {},
+  user: { name: 'Bob' },
 };
 
-export const LoggedOut = Template.bind({});
+export const LoggedOut = Header.bind({});
 LoggedOut.args = {};

@@ -1,41 +1,33 @@
 import { Button } from './Button';
 
-// More on default export: https://storybook.js.org/docs/web-components/writing-stories/introduction#default-export
 export default {
   title: 'Example/Button',
-  // More on argTypes: https://storybook.js.org/docs/web-components/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
-    onClick: { action: 'onClick' },
     size: {
-      control: { type: 'select' },
+      control: { type: 'radio' },
       options: ['small', 'medium', 'large'],
     },
   },
 };
 
-// More on component templates: https://storybook.js.org/docs/web-components/writing-stories/introduction#using-args
-const Template = (args) => Button(args);
-
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/web-components/writing-stories/args
+export const Primary = Button.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
 };
 
-export const Secondary = Template.bind({});
+export const Secondary = Button.bind({});
 Secondary.args = {
   label: 'Button',
 };
 
-export const Large = Template.bind({});
+export const Large = Button.bind({});
 Large.args = {
   size: 'large',
   label: 'Button',
 };
 
-export const Small = Template.bind({});
+export const Small = Button.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',

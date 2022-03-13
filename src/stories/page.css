@@ -55,7 +55,7 @@ section .tip-wrapper {
   margin-bottom: 40px;
 }
 
-section .tip-wrapper svg {
+section .tip-wrapper img {
   display: inline-block;
   height: 12px;
   width: 12px;
